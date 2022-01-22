@@ -56,6 +56,38 @@ nav{
     font-size: 20px;
     padding: 10px 30px;
     display: inline-block;
+    position: relative;
+}
+/* Dropdown part */
+
+.nav-part ul li ul{
+    position: absolute;
+    top: 150%;
+    left: 30%;
+    width:200px ;background-color: #fff;
+    box-shadow: #fff 0px 1px 4px;
+    visibility: hidden;
+     transform: scale(0);
+    transform-origin: top center; 
+    opacity: 0;
+    transition: 1s;
+   
+
+}
+.nav-part ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+   
+}
+.nav-part ul li ul li{
+  
+}
+.nav-part ul li ul li a{
+    font-size: 16px;
+    color: #000;
+ 
+   
 }
 
 .nav-part ul li a{
